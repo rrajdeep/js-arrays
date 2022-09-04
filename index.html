@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array - Assignment</title>
+</head>
+
+<body>
+    <h3>JavaScript Array</h3>
+    <!-- unordered list without content -->
+    <ul id="arrayList"></ul>
+    <script>
+        // declaring a const array car:
+        const cars = ['BMW', 'Audi', 'Scoda', 'Benz'];
+        let list = "";
+        for (let x of cars) {
+            list += "<li>" + x + "</li>";
+        }
+        // chenging inner content of ul element 
+        document.getElementById('arrayList').innerHTML = list;
+    </script>
+</body>
+
+</html>
